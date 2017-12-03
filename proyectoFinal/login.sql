@@ -29,7 +29,8 @@ CREATE TABLE `formularios` (
   `direccion` varchar(50) DEFAULT NULL,
   `carrera` varchar(50) DEFAULT NULL,
   `extraescolar` varchar(50) DEFAULT NULL,
-  `gustos` varchar(255) DEFAULT NULL
+  `gustos` varchar(255) DEFAULT NULL,
+  `estado` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -69,7 +70,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Paola','Castillo','Cancún','Paola','123','Admin','No iniciada','Ninguna','Ninguno'),(2,'Juan','Robles','Villas Cancún','Juan','123','Maestro','No iniciada','Ninguna','Fútbol'),(3,'Alonso','Pérez','Real Santa Fé','Alonso','123','Maestro','No iniciada','Ninguna','Karate'),(4,'Rafael','Balam','Región 99','Rafael','123','Maestro','No iniciada','Ninguna','Ajedréz'),(5,'Ana','Navarrete','Villas Otoch','Ana','123','Maestro','No iniciada','Ninguna','Danza'),(6,'Jorge','Sierra','Región 95','Jorge','123','Alumno','No iniciada','Ninguna','Ninguno'),(7,'Raúl','Canul','Esmeralda','Raúl','123','Alumno','No iniciada','Ninguna','Ninguno'),(8,'Javier','Cauich','Las Palmas','Javier','123','Alumno','Iniciada','Ninguna','Ninguno'),(9,'Cristian','Ortíz','Isla Mujeres','Cristian','123','Alumno','No iniciada','Ninguna','Ninguno');
+INSERT INTO `usuarios` VALUES (1,'Paola','Castillo','Cancún','Paola','123','Admin','No iniciada','Ninguna','Ninguno'),(2,'Juan','Robles','Villas Cancún','Juan','123','Maestro','No iniciada','Ninguna','Fútbol'),(3,'Alonso','Pérez','Real Santa Fé','Alonso','123','Maestro','No iniciada','Ninguna','Karate'),(4,'Rafael','Balam','Región 99','Rafael','123','Maestro','No iniciada','Ninguna','Ajedréz'),(5,'Ana','Navarrete','Villas Otoch','Ana','123','Maestro','Iniciada','Ninguna','Danza'),(6,'Jorge','Sierra','Región 95','Jorge','123','Alumno','No iniciada','Ninguna','Fútbol'),(7,'Raúl','Canul','Esmeralda','Raúl','123','Alumno','No iniciada','Ninguna','Ninguno'),(8,'Javier','Cauich','Las Palmas','Javier','123','Alumno','No iniciada','Ninguna','Ninguno'),(9,'Cristian','Ortíz','Isla Mujeres','Cristian','123','Alumno','No iniciada','Ninguna','Ninguno');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -82,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-12-03 11:35:37
+-- Dump completed on 2017-12-03 16:58:59
