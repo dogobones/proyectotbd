@@ -10,7 +10,7 @@ $direccion_nuevo=$_POST["CDireccion"];
 $carrera_nuevo=$_POST["CCarrera"];
 $extraEscolar_nuevo=$_POST["CExtra"];
 $gustos_nuevo=$_POST["CGustos"];
-$estado_nuevo=$_POST["CEstado"];
+$estado_nuevo="Enviada";
 
 if(isset($_POST["BEnviar"])){
   $resultado=mysqli_query($conexion,"INSERT INTO formularios(id,nombre,apellido,direccion,carrera,extraescolar,gustos,estado) values($id_nuevo,'$nombre_nuevo','$apellido_nuevo','$direccion_nuevo','$carrera_nuevo','$extraEscolar_nuevo','$gustos_nuevo','$estado_nuevo')");
@@ -19,7 +19,7 @@ if(isset($_POST["BEnviar"])){
 
   }else{
 mysqli_query($conexion,"update usuarios set estado=\"Enviada\" where sesion='Iniciada'");
-echo "Datos Enviados";
+header("Location: estadoSolicitud.php");
 }
 }
 
