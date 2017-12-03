@@ -13,6 +13,12 @@ $direccion_nuevo=$_POST["CDir"];
 $password_nuevo=$_POST["CPass"];
 
 if(isset($_POST["BActualizar"])){
+
+  if(empty($nombre_nuevo)||empty($apellido_nuevo)||empty($direccion_nuevo)||empty($password_nuevo)){
+header("Location: accionAlumno.php");
+
+  }
+    else{
   $resultado=mysqli_query($conexion,"UPDATE usuarios SET nombre='$nombre_nuevo',  apellido='$apellido_nuevo',  direccion='$direccion_nuevo',  contra='$password_nuevo' where sesion='Iniciada' ");
 			 mysqli_query($conexion,"UPDATE formularios SET nombre='$nombre_nuevo',  apellido='$apellido_nuevo',  direccion='$direccion_nuevo' where id='$filaUsuario[0]' ");
   if(!$resultado){
@@ -22,7 +28,8 @@ if(isset($_POST["BActualizar"])){
 
 header("Location: estadoSolicitud.php");
 }
-
+}
+//
 }
 
 ?>
