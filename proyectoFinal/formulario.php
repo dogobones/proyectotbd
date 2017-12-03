@@ -7,6 +7,8 @@
 <body>
 
 <?php
+$id_obt;
+
 
 $conexion=mysqli_connect("localhost","root","","login");
 
@@ -16,7 +18,7 @@ $fila=mysqli_fetch_array($resultado);
 //echo "Formulario a llenar<br>";
 
 //Inicio de formulario-------------------------------------------------------->
-echo "<form >";
+echo "<form action='verificarFormulario.php' method='POST'>";
 echo "<table border=2>";
 //Titulo de la tabla
 echo "<caption><strong>FORMULARIO</strong><br><br></caption>";
@@ -56,6 +58,10 @@ echo "<th>Gustos</th>";
 echo "<td><input type='Text' name ='CGustos'></td>";
 echo "</tr>";
 
+//Fila 8 ----------------------------------------------->
+echo "<tr>";
+echo "<th colspan='2'><input type='Submit' name='BEnviar' value='Enviar '><input type='Reset' name='BReset' value='Reset'></th>";
+echo "</tr>";
 
 
 
