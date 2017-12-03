@@ -19,19 +19,19 @@ $resultado=mysqli_query($conexion,"select * from formularios where extraescolar=
 if(isset($_POST["salir"])) header("Location: login.php");
 
 else {
-	
+
 	$f=0;
-	  
+
 	while($fila=mysqli_fetch_array($resultado)) {
-		
+
 		mysqli_query($conexion,"update formularios set estado='$_POST('estado$f')' where id=$fila[0]");
-			  
+
 		$f++;
-	
+
 	}
-	
+
 	header("Location: paginaProfesor.php");
-	
+
 }
 
 ?>

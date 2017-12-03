@@ -27,11 +27,11 @@ echo "<table align=center border=2>";
 echo "<tr>
 		<th>Id</th><th>Nombre</th><th>Apellido</th><th>Dirección</th><th>Carrera</th><th>Gustos</th><th>Estado</th>
       </tr>";
-	  
+
 $f=0;
-	  
+
 while($fila=mysqli_fetch_array($resultado)) {
-	
+
 	echo "<tr>
 			<th>$fila[0]</th><th>$fila[1]</th><th>$fila[2]</th><th>$fila[3]</th><th>$fila[4]</th><th>$fila[6]</th>
 			<th>
@@ -44,9 +44,9 @@ while($fila=mysqli_fetch_array($resultado)) {
 			</select>
 			</th>
 		  </tr>";
-		  
+
     $f++;
-	
+
 }
 
 echo "</table>";
@@ -57,7 +57,7 @@ echo "<center>
 	  </center>";
 
 echo "</form>";
-	
+
 ?>
 
 </body>
