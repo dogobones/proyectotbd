@@ -16,10 +16,9 @@ $fila=mysqli_fetch_array($resultado);
 
 /*echo "<caption><strong>FORMULARIO</strong><br><br></caption>";
 
-echo "<form action=\"crearFormulario.php\" method=\"post\">";
+echo "<form action=\"verificarFormulario.php\" method=\"post\">";
 
 echo "<table>";
-
 
 echo "<tr>
 		<th>USUARIO</th>
