@@ -42,6 +42,7 @@ else {
      if($estado=='Aceptada') mysqli_query($conexion,"UPDATE usuarios SET extraescolar='$fila[5]' where id=$fila[0]");
 		 else mysqli_query($conexion,"UPDATE usuarios SET extraescolar='Ninguno' where id=$fila[0]");
 
+
 		}
 
 		$f=$f+1;
