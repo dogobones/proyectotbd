@@ -28,7 +28,7 @@ echo "<tr>
 		<th>Id</th><th>Nombre</th><th>Apellido</th><th>Dirección</th><th>Carrera</th><th>Gustos</th><th>Estado</th>
       </tr>";
 
-$f=0;
+$f="0";
 
 while($fila=mysqli_fetch_array($resultado)) {
 
@@ -45,7 +45,7 @@ while($fila=mysqli_fetch_array($resultado)) {
 			</th>
 		  </tr>";
 
-    $f++;
+    $f=$f+1;
 
 }
 
