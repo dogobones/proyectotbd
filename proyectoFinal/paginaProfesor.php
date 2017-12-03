@@ -36,10 +36,10 @@ while($fila=mysqli_fetch_array($resultado)) {
 			<th>$fila[0]</th><th>$fila[1]</th><th>$fila[2]</th><th>$fila[3]</th><th>$fila[4]</th><th>$fila[6]</th>
 			<th>
 			<select name='estado$f'>
-			<option value='enviada'>Enviada</option>
-			<option value='aceptada'>Aceptada</option>
-			<option value='rechazada'>Rechazada</option>
-			<option value='borrar'>Borrar</option>
+			<option value='Enviada'>Enviada</option>
+			<option value='Aceptada'>Aceptada</option>
+			<option value='Rechazada'>Rechazada</option>
+			<option value='Borrar'>Borrar</option>
 			<option selected>$fila[7]</option>
 			</select>
 			</th>
