@@ -40,6 +40,10 @@ else {
 			
 			mysqli_query($conexion,"update usuarios set estado='$estado' where id=$fila[0]");
 			
+			if($estado=="Aceptada") mysqli_query($conexion,"update usuarios set extraescolar='$fila[5]' where id=$fila[0]");
+			
+			else mysqli_query($conexion,"update usuarios set extraescolar='Ninguna' where id=$fila[0]");
+			
 		}
  
 		$f=$f+1;
