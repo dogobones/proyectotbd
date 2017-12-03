@@ -14,7 +14,6 @@ echo "<form action=\"verificarUsuario.php\" method=\"post\">";
 
 echo "<table>";
 
-
 echo "<tr>
 		<th>USUARIO</th>
 	    <td><input type=\"text\" name=\"user\" value=\"\"></td>

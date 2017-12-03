@@ -63,11 +63,27 @@ echo "<tr>";
 echo "<th colspan='2'><input type='Submit' name='BEnviar' value='Enviar '><input type='Reset' name='BReset' value='Reset'></th>";
 echo "</tr>";
 
+<<<<<<< HEAD
+echo "<form action=\"verificarFormulario.php\" method=\"post\">";
+=======
+>>>>>>> 94e1ed6cc2812e8f6da1f636652ba095975660e0
 
 
+<<<<<<< HEAD
+echo "<tr>
+		<th>USUARIO</th>
+	    <td><input type=\"text\" name=\"user\" value=\"\"></td>
+      </tr>";
+ 
+echo "<tr>
+		<th>CONTRASENIA</th>
+		<td><input type=\"password\" name=\"password\" value=\"\"></td>
+      </tr>";
+=======
 echo "</table>";
 echo "</form>";
 
+>>>>>>> 94e1ed6cc2812e8f6da1f636652ba095975660e0
 
 
 
