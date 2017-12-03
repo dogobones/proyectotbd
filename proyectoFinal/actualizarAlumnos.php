@@ -25,23 +25,23 @@ else {
 	while($fila=mysqli_fetch_array($resultado)) {
 
 		$estado=$_POST["estado$f"];
-		
+
 		if($estado=="Borrar") {
-			
+
 			mysqli_query($conexion,"delete from formularios where id=$fila[0]");
-			
+
 			mysqli_query($conexion,"update usuarios set estado='Ninguna' where id=$fila[0]");
 			
-			
-			
+
+
 		} else {
 
 			mysqli_query($conexion,"update formularios set estado='$estado' where id=$fila[0]");
-			
+
 			mysqli_query($conexion,"update usuarios set estado='$estado' where id=$fila[0]");
-			
+
 		}
- 
+
 		$f=$f+1;
 
 	}

@@ -23,13 +23,12 @@ if(isset($_POST["salir"])) header("Location: login.php");
 
 else {
 
-	echo "Modificando datos personales.";
 
 	//Inicio de formulario-------------------------------------------------------->
 	echo "<form action='verificarAccionAlumno.php' method='POST'>";
 	echo "<table border=2>";
 	//Titulo de la tabla
-	echo "<caption><strong>FORMULARIO</strong><br><br></caption>";
+	echo "<caption><strong>Modificando datos personales.</strong><br><br></caption>";
 	//Fila 1--------------------------------------------------------------------->
 	echo "<tr>";
 	echo "<td>Nombre</td>";
