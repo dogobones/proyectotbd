@@ -29,6 +29,10 @@ echo "<tr>
       </tr>";
 	  
 $f=0;
+
+$numero=mysqli_num_rows($resultado);
+
+echo "$numero";
 	  
 while($fila=mysqli_fetch_array($resultado)) {
 	
