@@ -19,7 +19,7 @@ if(isset($_POST["BEnviar"])){
 
   }else{
 mysqli_query($conexion,"update usuarios set estado=\"Enviada\" where sesion='Iniciada'");
-echo "Datos Enviados";
+header("Location: estadoSolicitud.php");
 }
 }
 
