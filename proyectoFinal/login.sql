@@ -70,7 +70,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Paola','Castillo','Cancun','Paola','123','Admin','No iniciada','Ninguna','Ninguno'),(2,'Juan','Robles','Villas Cancun','Juan','123','Maestro','No iniciada','Ninguna','Futbol'),(3,'Alonso','Perez','Real Santa Fe','Alonso','123','Maestro','Iniciada','Ninguna','Karate'),(4,'Rafael','Balam','Region 99','Rafael','123','Maestro','No iniciada','Ninguna','Ajedrez'),(5,'Ana','Navarrete','Villas Otoch','Ana','123','Maestro','No iniciada','Ninguna','Danza'),(6,'Jorge','Sierra','Region 95','Jorge','123','Alumno','No iniciada','Ninguna','Ninguno'),(7,'Raul','Canul','Esmeralda','Raul','123','Alumno','No iniciada','Ninguna','Ninguno'),(8,'Javier','Cauich','Region 91','Javier','123','Alumno','No iniciada','Ninguna','Ninguno'),(9,'Cristian','Ortíz','Isla Mujeres','Cristian','123','Alumno','No iniciada','Ninguna','Ninguno');
+INSERT INTO `usuarios` VALUES (1,'Paola','Castillo','Cancun','Paola','123','Admin','Iniciada','Ninguna','Ninguno'),(2,'Juan','Robles','Villas Cancun','Juan','123','Maestro','No iniciada','Ninguna','Futbol'),(3,'Alonso','Perez','Real Santa Fe','Alonso','123','Maestro','No iniciada','Ninguna','Karate'),(4,'Rafael','Balam','Region 99','Rafael','123','Maestro','No iniciada','Ninguna','Ajedrez'),(5,'Ana','Navarrete','Villas Otoch','Ana','123','Maestro','No iniciada','Ninguna','Danza'),(6,'Jorge','Sierra','Region 95','Jorge','123','Alumno','No iniciada','Ninguna','Ninguno'),(7,'Raul','Canul','Esmeralda','Raul','123','Alumno','No iniciada','Ninguna','Ninguno'),(8,'Javier','Cauich','Region 91','Javier','123','Alumno','No iniciada','Ninguna','Ninguno'),(9,'Cristian','Ortiz','Isla Mujeres','Cristian','123','Alumno','No iniciada','Ninguna','Ninguno');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -83,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-12-03 17:31:03
+-- Dump completed on 2017-12-03 23:46:18
