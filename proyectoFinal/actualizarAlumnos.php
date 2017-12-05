@@ -30,7 +30,7 @@ else {
 
 			mysqli_query($conexion,"delete from formularios where id=$fila[0]");
 
-			mysqli_query($conexion,"update usuarios set estado='Ninguna' where id=$fila[0]");
+			mysqli_query($conexion,"update usuarios set estado='Ninguna', extraescolar='Ninguno' where id=$fila[0]");
 
 
 
